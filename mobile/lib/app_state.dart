@@ -12,7 +12,7 @@ class AppState extends ChangeNotifier {
   bool ready = false;
   bool isAuthenticated = false;
   bool isPremium = false;
-  bool isTurkish = true;
+  Locale locale = const Locale('tr');
   AppUser? user;
 
   final List<RepairPost> posts = [];
@@ -20,13 +20,51 @@ class AppState extends ChangeNotifier {
   final Set<String> liked = {};
   final List<VideoItem> videos = [];
 
+  /// DTC catalog currently ships TR + EN copy; use TR only for Turkish UI.
+  bool get preferTurkish => locale.languageCode == 'tr';
+
   Future<void> bootstrap() async {
-    await catalog.load();
+    try {
+      await catalog.load();
+    } catch (_) {
+      // Asset may be unavailable in some test contexts; UI still boots.
+    }
     _seedCommunity();
     final prefs = await SharedPreferences.getInstance();
     isPremium = prefs.getBool('demo_premium') ?? false;
-    isTurkish = (prefs.getString('locale') ?? 'tr') == 'tr';
+    locale = _parseLocale(prefs.getString('locale') ?? 'tr');
     ready = true;
+    notifyListeners();
+  }
+
+  static Locale _parseLocale(String tag) {
+    final parts = tag.replaceAll('-', '_').split('_');
+    if (parts.length >= 3) {
+      return Locale.fromSubtags(
+        languageCode: parts[0],
+        scriptCode: parts[1],
+        countryCode: parts[2],
+      );
+    }
+    if (parts.length == 2) {
+      final second = parts[1];
+      if (second.length == 4) {
+        return Locale.fromSubtags(languageCode: parts[0], scriptCode: second);
+      }
+      return Locale(parts[0], second);
+    }
+    return Locale(parts[0]);
+  }
+
+  Future<void> setLocale(Locale value) async {
+    locale = value;
+    final prefs = await SharedPreferences.getInstance();
+    final tag = value.countryCode != null
+        ? '${value.languageCode}_${value.countryCode}'
+        : (value.scriptCode != null
+            ? '${value.languageCode}_${value.scriptCode}'
+            : value.languageCode);
+    await prefs.setString('locale', tag);
     notifyListeners();
   }
 
@@ -54,14 +92,19 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<DiagnosisResult> diagnose({required String vin, required String dtc}) async {
+  Future<DiagnosisResult> diagnose({
+    required String vin,
+    required String dtc,
+    required String invalidDtcMessage,
+    required String notFoundMessage,
+  }) async {
     final code = DtcParser.normalize(dtc);
     if (!DtcParser.isValid(code)) {
-      throw Exception(isTurkish ? 'P0300 gibi geçerli bir kod girin.' : 'Enter a valid code like P0300.');
+      throw Exception(invalidDtcMessage);
     }
     final entry = catalog.lookup(code);
     if (entry == null) {
-      throw Exception(isTurkish ? 'Bu arıza kodu henüz katalogda yok.' : 'Code not in catalog yet.');
+      throw Exception(notFoundMessage);
     }
     final part = catalog.partFor(entry);
     if (part == null) {

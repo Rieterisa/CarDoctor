@@ -1,0 +1,72 @@
+{
+  "@@locale": "en",
+  "tabDiagnose": "Diagnose",
+  "tabCommunity": "Community",
+  "tabUpload": "Upload",
+  "tabProfile": "Profile",
+  "authTagline": "VIN + fault code → part, repair steps, and 3D guidance from the community.",
+  "authDemo": "Continue with Demo",
+  "diagnoseHeadline": "Find the fault",
+  "diagnoseSubtitle": "Enter a specific VIN and fault code — diagnosis is resolved per vehicle brand.",
+  "diagnoseVin": "VIN / Chassis",
+  "diagnoseDtc": "Fault code (DTC)",
+  "diagnoseSubmit": "Diagnose",
+  "diagnoseSamples": "Try a common code",
+  "legalDisclaimer": "For informational purposes only. Not a substitute for professional service advice. Follow safety procedures.",
+  "errorDtcInvalid": "Enter a valid code like P0300.",
+  "errorDtcNotFound": "This fault code is not in the catalog yet.",
+  "resultSteps": "Repair steps",
+  "resultVideos": "Community videos",
+  "resultVideosEmpty": "No videos yet — be the first to upload.",
+  "resultView3d": "View faulty part in 3D",
+  "scene3dTitle": "Highlighted part",
+  "scene3dHint": "Drag to rotate. Orange mark shows the likely faulty component.",
+  "scene3dNav": "3D Vehicle",
+  "communityFilter": "Filter by DTC",
+  "communityComments": "Comments",
+  "communityCommentPlaceholder": "Share your fix…",
+  "communityCommentSend": "Send",
+  "uploadDetails": "Details",
+  "uploadTitle": "Title",
+  "uploadSummary": "What fixed it?",
+  "uploadPick": "Pick a video",
+  "uploadSubmit": "Submit for review",
+  "uploadSuccess": "Uploaded. Pending moderation (admins publish instantly).",
+  "uploadErrorTitle": "Title is required.",
+  "profileSubscription": "Subscription",
+  "profilePlan": "Plan",
+  "profilePlanPro": "Pro",
+  "profilePlanFree": "Free",
+  "profileUpgrade": "Upgrade to Pro",
+  "profileMyVideos": "My videos",
+  "profileMyVideosEmpty": "No uploads yet.",
+  "profileSignOut": "Sign out",
+  "paywallSubtitle": "Unlock 3D part highlight, higher video quota, and repair history.",
+  "paywallBenefit3d": "Interactive 3D fault localization",
+  "paywallBenefitVideo": "Up to 30 community uploads / month",
+  "paywallBenefitHistory": "Unlimited diagnosis history",
+  "paywallDemoUnlock": "Unlock Pro (Demo)",
+  "paywallClose": "Close",
+  "authPlayNote": "Google Play build — Firebase Auth comes next.",
+  "uploadPicked": "Video selected",
+  "uploadQuotaFull": "Quota full — upgrade to Pro.",
+  "uploadNavTitle": "Upload video",
+  "paywallBillingNote": "Play Billing (Google Play subscription) will be connected next.",
+  "commentsCount": "{count} comments",
+  "uploadsLeft": "{count} uploads left this month",
+  "language": "Language",
+  "@uploadsLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@commentsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
 
 import '../app_state.dart';
+import '../l10n/app_localizations.dart';
 import '../theme.dart';
+import '../widgets/ui_kit.dart';
 import 'result_screen.dart';
 
 class DiagnoseScreen extends StatefulWidget {
@@ -27,6 +29,7 @@ class _DiagnoseScreenState extends State<DiagnoseScreen> {
   }
 
   Future<void> _run() async {
+    final l10n = AppLocalizations.of(context);
     setState(() {
       loading = true;
       error = null;
@@ -35,6 +38,8 @@ class _DiagnoseScreenState extends State<DiagnoseScreen> {
       final result = await context.read<AppState>().diagnose(
             vin: vinCtrl.text,
             dtc: dtcCtrl.text,
+            invalidDtcMessage: l10n.errorDtcInvalid,
+            notFoundMessage: l10n.errorDtcNotFound,
           );
       if (!mounted) return;
       await Navigator.of(context).push(
@@ -50,89 +55,93 @@ class _DiagnoseScreenState extends State<DiagnoseScreen> {
   @override
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
+    final l10n = AppLocalizations.of(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('CarDoctor')),
-      body: ListView(
-        padding: const EdgeInsets.all(20),
-        children: [
-          Text('Arızayı bul', style: GoogleFonts.fraunces(fontSize: 28, fontWeight: FontWeight.w700)),
-          const SizedBox(height: 8),
-          const Text(
-            'Şasi numarasını (VIN) ve OBD arıza kodunu gir.',
-            style: TextStyle(color: AppTheme.muted),
-          ),
-          const SizedBox(height: 20),
-          Container(
-            padding: const EdgeInsets.all(18),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(18),
-              boxShadow: [
-                BoxShadow(color: Colors.black.withValues(alpha: 0.04), blurRadius: 12, offset: const Offset(0, 4)),
-              ],
-            ),
-            child: Column(
-              children: [
-                TextField(
-                  controller: vinCtrl,
-                  textCapitalization: TextCapitalization.characters,
-                  decoration: const InputDecoration(
-                    labelText: 'VIN / Şasi',
-                    hintText: '1HGCM82633A004352',
-                    border: OutlineInputBorder(),
-                  ),
+      body: AtmosphereBackground(
+        child: SafeArea(
+          child: ListView(
+            padding: const EdgeInsets.fromLTRB(22, 12, 22, 28),
+            children: [
+              const BrandMark(size: 26)
+                  .animate()
+                  .fadeIn(duration: 400.ms),
+              const SizedBox(height: 28),
+              Text(l10n.diagnoseHeadline, style: AppTheme.display(size: 36))
+                  .animate()
+                  .fadeIn(delay: 60.ms)
+                  .slideY(begin: 0.08),
+              const SizedBox(height: 10),
+              Text(l10n.diagnoseSubtitle, style: AppTheme.body(size: 15, color: AppTheme.muted))
+                  .animate()
+                  .fadeIn(delay: 100.ms),
+              const SizedBox(height: 28),
+              TextField(
+                controller: vinCtrl,
+                textCapitalization: TextCapitalization.characters,
+                style: AppTheme.body(size: 16, weight: FontWeight.w600),
+                decoration: InputDecoration(
+                  labelText: l10n.diagnoseVin,
+                  hintText: '1HGCM82633A004352',
                 ),
+              ),
+              const SizedBox(height: 14),
+              TextField(
+                controller: dtcCtrl,
+                textCapitalization: TextCapitalization.characters,
+                style: AppTheme.body(size: 16, weight: FontWeight.w700),
+                decoration: InputDecoration(
+                  labelText: l10n.diagnoseDtc,
+                  hintText: 'P0300',
+                ),
+              ),
+              if (error != null) ...[
                 const SizedBox(height: 12),
-                TextField(
-                  controller: dtcCtrl,
-                  textCapitalization: TextCapitalization.characters,
-                  decoration: const InputDecoration(
-                    labelText: 'Arıza kodu (DTC)',
-                    hintText: 'P0300',
-                    border: OutlineInputBorder(),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                FilledButton(
-                  onPressed: loading ? null : _run,
-                  child: loading
-                      ? const SizedBox(
-                          width: 22,
-                          height: 22,
-                          child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
-                        )
-                      : const Text('Teşhis et'),
-                ),
+                Text(error!, style: AppTheme.body(size: 13, color: AppTheme.danger, weight: FontWeight.w600)),
               ],
-            ),
+              const SizedBox(height: 18),
+              PrimaryCta(label: l10n.diagnoseSubmit, onPressed: _run, loading: loading, icon: Icons.troubleshoot)
+                  .animate()
+                  .fadeIn(delay: 140.ms),
+              const SizedBox(height: 32),
+              Text(l10n.diagnoseSamples, style: AppTheme.body(size: 13, weight: FontWeight.w800, color: AppTheme.muted)),
+              const SizedBox(height: 12),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: state.catalog.sampleCodes
+                    .map(
+                      (c) => InkWell(
+                        onTap: () => setState(() => dtcCtrl.text = c),
+                        borderRadius: BorderRadius.circular(10),
+                        child: Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
+                          decoration: BoxDecoration(
+                            color: dtcCtrl.text.toUpperCase() == c ? AppTheme.accentDeep : AppTheme.surface,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              color: dtcCtrl.text.toUpperCase() == c
+                                  ? AppTheme.accentDeep
+                                  : AppTheme.ink.withValues(alpha: 0.08),
+                            ),
+                          ),
+                          child: Text(
+                            c,
+                            style: AppTheme.body(
+                              size: 13,
+                              weight: FontWeight.w800,
+                              color: dtcCtrl.text.toUpperCase() == c ? Colors.white : AppTheme.accentDeep,
+                            ),
+                          ),
+                        ),
+                      ),
+                    )
+                    .toList(),
+              ),
+              const SizedBox(height: 36),
+              Text(l10n.legalDisclaimer, style: AppTheme.body(size: 11, color: AppTheme.muted)),
+            ],
           ),
-          if (error != null) ...[
-            const SizedBox(height: 12),
-            Text(error!, style: const TextStyle(color: AppTheme.danger)),
-          ],
-          const SizedBox(height: 24),
-          const Text('Yaygın bir kod dene', style: TextStyle(fontWeight: FontWeight.w600)),
-          const SizedBox(height: 10),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: state.catalog.sampleCodes
-                .map(
-                  (c) => ActionChip(
-                    label: Text(c),
-                    onPressed: () => setState(() => dtcCtrl.text = c),
-                    backgroundColor: AppTheme.accentSoft,
-                    labelStyle: const TextStyle(color: AppTheme.accent, fontWeight: FontWeight.w600),
-                  ),
-                )
-                .toList(),
-          ),
-          const SizedBox(height: 24),
-          const Text(
-            'Yalnızca bilgilendirme amaçlıdır. Profesyonel servis tavsiyesinin yerini tutmaz.',
-            style: TextStyle(fontSize: 11, color: AppTheme.muted),
-          ),
-        ],
+        ),
       ),
     );
   }

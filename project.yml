@@ -5,6 +5,50 @@ options:
     iOS: "17.0"
   xcodeVersion: "15.0"
   createIntermediateGroups: true
+  # Google Play top-volume + high-value locales (matches Localizable.xcstrings)
+  localizations:
+    - en
+    - tr
+    - es
+    - es-419
+    - pt-BR
+    - pt-PT
+    - hi
+    - id
+    - ar
+    - ru
+    - de
+    - fr
+    - ja
+    - ko
+    - zh-Hans
+    - zh-Hant
+    - vi
+    - th
+    - it
+    - pl
+    - nl
+    - ms
+    - fil
+    - ur
+    - bn
+    - fa
+    - uk
+    - ro
+    - cs
+    - sv
+    - el
+    - he
+    - hu
+    - da
+    - fi
+    - nb
+    - sk
+    - hr
+    - bg
+    - sw
+    - ca
+  developmentLanguage: en
 settings:
   base:
     SWIFT_VERSION: "5.9"
