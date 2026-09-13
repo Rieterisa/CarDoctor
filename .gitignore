@@ -1,0 +1,36 @@
+# macOS / Xcode / DerivedData
+.DS_Store
+*.xcuserstate
+*.xcuserdata
+DerivedData/
+build/
+CarDoctor.xcodeproj/
+CarDoctor.xcworkspace/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Secrets
+GoogleService-Info.plist
+CarDoctor/GoogleService-Info.plist
+*.p8
+*.p12
+AuthKey_*.p8
+.env
+.env.*
+
+# SPM
+.swiftpm/
+Packages/
+Package.resolved
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+Thumbs.db
+desktop.ini

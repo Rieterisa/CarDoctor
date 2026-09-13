@@ -1,0 +1,7 @@
+PLACEHOLDER — replace with Firebase console download.
+
+1. Firebase Console → Add iOS app
+2. Bundle ID: com.cardoctor.app
+3. Download GoogleService-Info.plist
+4. Put it at: CarDoctor/GoogleService-Info.plist
+5. Do NOT commit the real file (see .gitignore)

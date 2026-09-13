@@ -1,0 +1,60 @@
+name: CarDoctor
+options:
+  bundleIdPrefix: com.cardoctor
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    TARGETED_DEVICE_FAMILY: "1"
+    INFOPLIST_KEY_UILaunchScreen_Generation: true
+    INFOPLIST_KEY_CFBundleDisplayName: CarDoctor
+    INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+    CODE_SIGN_ENTITLEMENTS: CarDoctor/CarDoctor.entitlements
+    DEVELOPMENT_TEAM: "" # Set your Apple Team ID
+    ENABLE_TESTABILITY: YES
+targets:
+  CarDoctor:
+    type: application
+    platform: iOS
+    sources:
+      - path: CarDoctor
+        excludes:
+          - "**/*.md"
+          - "Resources/**"
+    resources:
+      - path: CarDoctor/Resources
+      - path: CarDoctor/Resources/PrivacyInfo.xcprivacy
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cardoctor.app
+        INFOPLIST_KEY_NSCameraUsageDescription: "Tamir videoları çekmek için kamera erişimi gerekir."
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "Tamir videoları yüklemek için fotoğraf kitaplığı erişimi gerekir."
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "Video kaydında ses için mikrofon erişimi gerekir."
+    entitlements:
+      path: CarDoctor/CarDoctor.entitlements
+    dependencies: []
+  CarDoctorTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: CarDoctorTests
+    dependencies:
+      - target: CarDoctor
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.cardoctor.app.tests
+schemes:
+  CarDoctor:
+    build:
+      targets:
+        CarDoctor: all
+        CarDoctorTests: [test]
+    test:
+      targets:
+        - CarDoctorTests
+    run:
+      config: Debug

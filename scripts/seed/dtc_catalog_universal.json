@@ -1,0 +1,2620 @@
+{
+  "parts": [
+    {
+      "id": "o2_sensor",
+      "nameTR": "Oksijen Sensörü",
+      "nameEN": "Oxygen Sensor",
+      "category": "emissions",
+      "usdzEntityName": "o2_sensor",
+      "relatedCodes": [
+        "P0130",
+        "P0131",
+        "P0132",
+        "P0133",
+        "P0135",
+        "P0136",
+        "P0141",
+        "P2195",
+        "P0134",
+        "P0137",
+        "P0138",
+        "P0150",
+        "P0153",
+        "P1135"
+      ]
+    },
+    {
+      "id": "ignition_coil",
+      "nameTR": "Ateşleme Bobini",
+      "nameEN": "Ignition Coil",
+      "category": "ignition",
+      "usdzEntityName": "ignition_coil",
+      "relatedCodes": [
+        "P0300",
+        "P0301",
+        "P0302",
+        "P0303",
+        "P0304",
+        "P0305",
+        "P0306",
+        "P0351",
+        "P0352",
+        "P0307",
+        "P0308",
+        "P0353",
+        "P0354"
+      ]
+    },
+    {
+      "id": "maf_sensor",
+      "nameTR": "MAF Sensörü",
+      "nameEN": "MAF Sensor",
+      "category": "air",
+      "usdzEntityName": "maf_sensor",
+      "relatedCodes": [
+        "P0101",
+        "P0102",
+        "P0103",
+        "P0113",
+        "P0171",
+        "P0172",
+        "P0174",
+        "P0175"
+      ]
+    },
+    {
+      "id": "map_sensor",
+      "nameTR": "MAP Sensörü",
+      "nameEN": "MAP Sensor",
+      "category": "air",
+      "usdzEntityName": "maf_sensor",
+      "relatedCodes": [
+        "P0106",
+        "P0107"
+      ]
+    },
+    {
+      "id": "catalytic_converter",
+      "nameTR": "Katalitik Konvertör",
+      "nameEN": "Catalytic Converter",
+      "category": "emissions",
+      "usdzEntityName": "catalytic_converter",
+      "relatedCodes": [
+        "P0420",
+        "P0430"
+      ]
+    },
+    {
+      "id": "abs_module",
+      "nameTR": "ABS Modülü",
+      "nameEN": "ABS Module",
+      "category": "brakes",
+      "usdzEntityName": "abs_module",
+      "relatedCodes": [
+        "P0500",
+        "C0035",
+        "C0036",
+        "C0040",
+        "U0121",
+        "C0050"
+      ]
+    },
+    {
+      "id": "battery",
+      "nameTR": "Akü",
+      "nameEN": "Battery",
+      "category": "electrical",
+      "usdzEntityName": "battery",
+      "relatedCodes": [
+        "P0562",
+        "P0615",
+        "P0685"
+      ]
+    },
+    {
+      "id": "alternator",
+      "nameTR": "Alternatör",
+      "nameEN": "Alternator",
+      "category": "electrical",
+      "usdzEntityName": "alternator",
+      "relatedCodes": [
+        "P0563"
+      ]
+    },
+    {
+      "id": "fuel_pump",
+      "nameTR": "Yakıt Pompası",
+      "nameEN": "Fuel Pump",
+      "category": "fuel",
+      "usdzEntityName": "fuel_pump",
+      "relatedCodes": [
+        "P0201",
+        "P0230",
+        "P0087",
+        "P0088",
+        "P0627"
+      ]
+    },
+    {
+      "id": "throttle_body",
+      "nameTR": "Gaz Kelebeği",
+      "nameEN": "Throttle Body",
+      "category": "air",
+      "usdzEntityName": "throttle_body",
+      "relatedCodes": [
+        "P0121",
+        "P0122",
+        "P0123",
+        "P0506",
+        "P0507",
+        "P2111",
+        "P2112",
+        "P2299",
+        "P2101",
+        "P2122",
+        "P2135"
+      ]
+    },
+    {
+      "id": "engine",
+      "nameTR": "Motor / Genel",
+      "nameEN": "Engine / General",
+      "category": "engine",
+      "usdzEntityName": "engine",
+      "relatedCodes": [
+        "P0217",
+        "P0401",
+        "P0606",
+        "P0700",
+        "U0100",
+        "P0400",
+        "P0411",
+        "P0480",
+        "P0520",
+        "B0001"
+      ]
+    },
+    {
+      "id": "evap",
+      "nameTR": "EVAP Sistemi",
+      "nameEN": "EVAP System",
+      "category": "emissions",
+      "usdzEntityName": "engine",
+      "relatedCodes": [
+        "P0440",
+        "P0442",
+        "P0446",
+        "P0455",
+        "P0441",
+        "P0456",
+        "P0496"
+      ]
+    },
+    {
+      "id": "ect_sensor",
+      "nameTR": "Soğutma Sıcaklık Sensörü",
+      "nameEN": "ECT Sensor",
+      "category": "cooling",
+      "usdzEntityName": "engine",
+      "relatedCodes": [
+        "P0118",
+        "P0128",
+        "P0117"
+      ]
+    },
+    {
+      "id": "knock_sensor",
+      "nameTR": "Vuruntu Sensörü",
+      "nameEN": "Knock Sensor",
+      "category": "engine",
+      "usdzEntityName": "engine",
+      "relatedCodes": [
+        "P0325",
+        "P0327",
+        "P0330"
+      ]
+    },
+    {
+      "id": "cam_sensor",
+      "nameTR": "Eksantrik Sensörü",
+      "nameEN": "Camshaft Sensor",
+      "category": "engine",
+      "usdzEntityName": "engine",
+      "relatedCodes": [
+        "P0340",
+        "P0010",
+        "P0011",
+        "P0020",
+        "P0341"
+      ]
+    },
+    {
+      "id": "crank_sensor",
+      "nameTR": "Krank Sensörü",
+      "nameEN": "Crankshaft Sensor",
+      "category": "engine",
+      "usdzEntityName": "engine",
+      "relatedCodes": [
+        "P0335",
+        "P0016"
+      ]
+    }
+  ],
+  "dtc": [
+    {
+      "code": "B0001",
+      "titleTR": "Sürücü Hava Yastığı Devresi",
+      "titleEN": "Driver Frontal Stage 1 Deployment Control",
+      "descriptionTR": "B0001 arıza kodu: Sürücü Hava Yastığı Devresi. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "B0001: Driver Frontal Stage 1 Deployment Control. The ECU detected an anomaly in this circuit/system.",
+      "severity": "critical",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "C0035",
+      "titleTR": "Sol Ön Teker Hız Sensörü",
+      "titleEN": "Left Front Wheel Speed Sensor",
+      "descriptionTR": "C0035 arıza kodu: Sol Ön Teker Hız Sensörü. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "C0035: Left Front Wheel Speed Sensor. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "abs_module",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "C0036",
+      "titleTR": "Sol Ön Teker Hız Sensörü Aralığı",
+      "titleEN": "Left Front Wheel Speed Sensor Range",
+      "descriptionTR": "C0036 arıza kodu: Sol Ön Teker Hız Sensörü Aralığı. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "C0036: Left Front Wheel Speed Sensor Range. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "abs_module",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "C0040",
+      "titleTR": "Sağ Ön Teker Hız Sensörü",
+      "titleEN": "Right Front Wheel Speed Sensor",
+      "descriptionTR": "C0040 arıza kodu: Sağ Ön Teker Hız Sensörü. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "C0040: Right Front Wheel Speed Sensor. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "abs_module",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "C0050",
+      "titleTR": "Direksiyon Açı Sensörü",
+      "titleEN": "Steering Angle Sensor",
+      "descriptionTR": "C0050 arıza kodu: Direksiyon Açı Sensörü. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "C0050: Steering Angle Sensor. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "abs_module",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0010",
+      "titleTR": "A Eksantrik Konum Aktüatör B1",
+      "titleEN": "A Camshaft Position Actuator Circuit B1",
+      "descriptionTR": "P0010 arıza kodu: A Eksantrik Konum Aktüatör B1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0010: A Camshaft Position Actuator Circuit B1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "cam_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0011",
+      "titleTR": "A Eksantrik Zamanlama İleri B1",
+      "titleEN": "A Camshaft Position Timing Over-Advanced B1",
+      "descriptionTR": "P0011 arıza kodu: A Eksantrik Zamanlama İleri B1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0011: A Camshaft Position Timing Over-Advanced B1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "cam_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0016",
+      "titleTR": "Krank-Eksantrik Korelasyonu",
+      "titleEN": "Crankshaft-Camshaft Correlation",
+      "descriptionTR": "P0016 arıza kodu: Krank-Eksantrik Korelasyonu. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0016: Crankshaft-Camshaft Correlation. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "crank_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0020",
+      "titleTR": "A Eksantrik Konum Aktüatör B2",
+      "titleEN": "A Camshaft Position Actuator Circuit B2",
+      "descriptionTR": "P0020 arıza kodu: A Eksantrik Konum Aktüatör B2. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0020: A Camshaft Position Actuator Circuit B2. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "cam_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0087",
+      "titleTR": "Yakıt Rayı/Sistem Basıncı Çok Düşük",
+      "titleEN": "Fuel Rail/System Pressure Too Low",
+      "descriptionTR": "P0087 arıza kodu: Yakıt Rayı/Sistem Basıncı Çok Düşük. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0087: Fuel Rail/System Pressure Too Low. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "fuel_pump",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0088",
+      "titleTR": "Yakıt Rayı/Sistem Basıncı Çok Yüksek",
+      "titleEN": "Fuel Rail/System Pressure Too High",
+      "descriptionTR": "P0088 arıza kodu: Yakıt Rayı/Sistem Basıncı Çok Yüksek. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0088: Fuel Rail/System Pressure Too High. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "fuel_pump",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0101",
+      "titleTR": "MAF Devre Aralığı/Performans",
+      "titleEN": "MAF Circuit Range/Performance",
+      "descriptionTR": "P0101 arıza kodu: MAF Devre Aralığı/Performans. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0101: MAF Circuit Range/Performance. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "maf_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0102",
+      "titleTR": "MAF Düşük Giriş",
+      "titleEN": "MAF Circuit Low Input",
+      "descriptionTR": "P0102 arıza kodu: MAF Düşük Giriş. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0102: MAF Circuit Low Input. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "maf_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0103",
+      "titleTR": "MAF Yüksek Giriş",
+      "titleEN": "MAF Circuit High Input",
+      "descriptionTR": "P0103 arıza kodu: MAF Yüksek Giriş. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0103: MAF Circuit High Input. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "maf_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0106",
+      "titleTR": "MAP Devre Aralığı",
+      "titleEN": "MAP Circuit Range/Performance",
+      "descriptionTR": "P0106 arıza kodu: MAP Devre Aralığı. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0106: MAP Circuit Range/Performance. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "map_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0107",
+      "titleTR": "MAP Düşük Giriş",
+      "titleEN": "MAP Circuit Low Input",
+      "descriptionTR": "P0107 arıza kodu: MAP Düşük Giriş. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0107: MAP Circuit Low Input. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "map_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0113",
+      "titleTR": "Emme Havası Sıcaklık Yüksek",
+      "titleEN": "IAT Sensor High Input",
+      "descriptionTR": "P0113 arıza kodu: Emme Havası Sıcaklık Yüksek. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0113: IAT Sensor High Input. The ECU detected an anomaly in this circuit/system.",
+      "severity": "low",
+      "partId": "maf_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0117",
+      "titleTR": "ECT Düşük Giriş",
+      "titleEN": "ECT Sensor Circuit Low Input",
+      "descriptionTR": "P0117 arıza kodu: ECT Düşük Giriş. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0117: ECT Sensor Circuit Low Input. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "ect_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0118",
+      "titleTR": "ECT Yüksek Giriş",
+      "titleEN": "ECT Sensor High Input",
+      "descriptionTR": "P0118 arıza kodu: ECT Yüksek Giriş. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0118: ECT Sensor High Input. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "ect_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0121",
+      "titleTR": "TPS A Aralığı/Performans",
+      "titleEN": "TPS A Circuit Range/Performance",
+      "descriptionTR": "P0121 arıza kodu: TPS A Aralığı/Performans. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0121: TPS A Circuit Range/Performance. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0122",
+      "titleTR": "TPS A Düşük",
+      "titleEN": "TPS A Circuit Low",
+      "descriptionTR": "P0122 arıza kodu: TPS A Düşük. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0122: TPS A Circuit Low. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0123",
+      "titleTR": "TPS A Yüksek",
+      "titleEN": "TPS A Circuit High",
+      "descriptionTR": "P0123 arıza kodu: TPS A Yüksek. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0123: TPS A Circuit High. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0128",
+      "titleTR": "Termostat Soğuk",
+      "titleEN": "Coolant Thermostat Below Regulating Temp",
+      "descriptionTR": "P0128 arıza kodu: Termostat Soğuk. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0128: Coolant Thermostat Below Regulating Temp. The ECU detected an anomaly in this circuit/system.",
+      "severity": "low",
+      "partId": "ect_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0130",
+      "titleTR": "O2 Sensör Devresi B1S1",
+      "titleEN": "O2 Sensor Circuit B1S1",
+      "descriptionTR": "P0130 arıza kodu: O2 Sensör Devresi B1S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0130: O2 Sensor Circuit B1S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0131",
+      "titleTR": "O2 Sensör Düşük B1S1",
+      "titleEN": "O2 Sensor Low Voltage B1S1",
+      "descriptionTR": "P0131 arıza kodu: O2 Sensör Düşük B1S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0131: O2 Sensor Low Voltage B1S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0132",
+      "titleTR": "O2 Sensör Yüksek B1S1",
+      "titleEN": "O2 Sensor High Voltage B1S1",
+      "descriptionTR": "P0132 arıza kodu: O2 Sensör Yüksek B1S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0132: O2 Sensor High Voltage B1S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0133",
+      "titleTR": "O2 Sensör Yavaş Yanıt B1S1",
+      "titleEN": "O2 Sensor Slow Response B1S1",
+      "descriptionTR": "P0133 arıza kodu: O2 Sensör Yavaş Yanıt B1S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0133: O2 Sensor Slow Response B1S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0134",
+      "titleTR": "O2 Aktivite Yok B1S1",
+      "titleEN": "O2 Sensor No Activity B1S1",
+      "descriptionTR": "P0134 arıza kodu: O2 Aktivite Yok B1S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0134: O2 Sensor No Activity B1S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0135",
+      "titleTR": "O2 Isıtıcı Devresi B1S1",
+      "titleEN": "O2 Sensor Heater Circuit B1S1",
+      "descriptionTR": "P0135 arıza kodu: O2 Isıtıcı Devresi B1S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0135: O2 Sensor Heater Circuit B1S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0136",
+      "titleTR": "O2 Sensör Devresi B1S2",
+      "titleEN": "O2 Sensor Circuit B1S2",
+      "descriptionTR": "P0136 arıza kodu: O2 Sensör Devresi B1S2. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0136: O2 Sensor Circuit B1S2. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0137",
+      "titleTR": "O2 Düşük Voltaj B1S2",
+      "titleEN": "O2 Sensor Low Voltage B1S2",
+      "descriptionTR": "P0137 arıza kodu: O2 Düşük Voltaj B1S2. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0137: O2 Sensor Low Voltage B1S2. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0138",
+      "titleTR": "O2 Yüksek Voltaj B1S2",
+      "titleEN": "O2 Sensor High Voltage B1S2",
+      "descriptionTR": "P0138 arıza kodu: O2 Yüksek Voltaj B1S2. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0138: O2 Sensor High Voltage B1S2. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0141",
+      "titleTR": "O2 Isıtıcı Devresi B1S2",
+      "titleEN": "O2 Sensor Heater Circuit B1S2",
+      "descriptionTR": "P0141 arıza kodu: O2 Isıtıcı Devresi B1S2. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0141: O2 Sensor Heater Circuit B1S2. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0150",
+      "titleTR": "O2 Sensör Devresi B2S1",
+      "titleEN": "O2 Sensor Circuit B2S1",
+      "descriptionTR": "P0150 arıza kodu: O2 Sensör Devresi B2S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0150: O2 Sensor Circuit B2S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0153",
+      "titleTR": "O2 Yavaş Yanıt B2S1",
+      "titleEN": "O2 Sensor Slow Response B2S1",
+      "descriptionTR": "P0153 arıza kodu: O2 Yavaş Yanıt B2S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0153: O2 Sensor Slow Response B2S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0171",
+      "titleTR": "Sistem Çok Fakir B1",
+      "titleEN": "System Too Lean Bank 1",
+      "descriptionTR": "P0171 arıza kodu: Sistem Çok Fakir B1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0171: System Too Lean Bank 1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "maf_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0172",
+      "titleTR": "Sistem Çok Zengin B1",
+      "titleEN": "System Too Rich Bank 1",
+      "descriptionTR": "P0172 arıza kodu: Sistem Çok Zengin B1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0172: System Too Rich Bank 1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "maf_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0174",
+      "titleTR": "Sistem Çok Fakir B2",
+      "titleEN": "System Too Lean Bank 2",
+      "descriptionTR": "P0174 arıza kodu: Sistem Çok Fakir B2. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0174: System Too Lean Bank 2. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "maf_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0175",
+      "titleTR": "Sistem Çok Zengin B2",
+      "titleEN": "System Too Rich Bank 2",
+      "descriptionTR": "P0175 arıza kodu: Sistem Çok Zengin B2. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0175: System Too Rich Bank 2. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "maf_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0201",
+      "titleTR": "Enjektör Devresi Silindir 1",
+      "titleEN": "Injector Circuit Cylinder 1",
+      "descriptionTR": "P0201 arıza kodu: Enjektör Devresi Silindir 1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0201: Injector Circuit Cylinder 1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "fuel_pump",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0217",
+      "titleTR": "Motor Aşırı Isınma",
+      "titleEN": "Engine Overtemperature Condition",
+      "descriptionTR": "P0217 arıza kodu: Motor Aşırı Isınma. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0217: Engine Overtemperature Condition. The ECU detected an anomaly in this circuit/system.",
+      "severity": "critical",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0230",
+      "titleTR": "Yakıt Pompası Primer Devre",
+      "titleEN": "Fuel Pump Primary Circuit",
+      "descriptionTR": "P0230 arıza kodu: Yakıt Pompası Primer Devre. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0230: Fuel Pump Primary Circuit. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "fuel_pump",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0300",
+      "titleTR": "Rastgele/Çoklu Tekleme",
+      "titleEN": "Random/Multiple Cylinder Misfire",
+      "descriptionTR": "P0300 arıza kodu: Rastgele/Çoklu Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0300: Random/Multiple Cylinder Misfire. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0301",
+      "titleTR": "Silindir 1 Tekleme",
+      "titleEN": "Cylinder 1 Misfire Detected",
+      "descriptionTR": "P0301 arıza kodu: Silindir 1 Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0301: Cylinder 1 Misfire Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0302",
+      "titleTR": "Silindir 2 Tekleme",
+      "titleEN": "Cylinder 2 Misfire Detected",
+      "descriptionTR": "P0302 arıza kodu: Silindir 2 Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0302: Cylinder 2 Misfire Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0303",
+      "titleTR": "Silindir 3 Tekleme",
+      "titleEN": "Cylinder 3 Misfire Detected",
+      "descriptionTR": "P0303 arıza kodu: Silindir 3 Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0303: Cylinder 3 Misfire Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0304",
+      "titleTR": "Silindir 4 Tekleme",
+      "titleEN": "Cylinder 4 Misfire Detected",
+      "descriptionTR": "P0304 arıza kodu: Silindir 4 Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0304: Cylinder 4 Misfire Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0305",
+      "titleTR": "Silindir 5 Tekleme",
+      "titleEN": "Cylinder 5 Misfire Detected",
+      "descriptionTR": "P0305 arıza kodu: Silindir 5 Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0305: Cylinder 5 Misfire Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0306",
+      "titleTR": "Silindir 6 Tekleme",
+      "titleEN": "Cylinder 6 Misfire Detected",
+      "descriptionTR": "P0306 arıza kodu: Silindir 6 Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0306: Cylinder 6 Misfire Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0307",
+      "titleTR": "Silindir 7 Tekleme",
+      "titleEN": "Cylinder 7 Misfire Detected",
+      "descriptionTR": "P0307 arıza kodu: Silindir 7 Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0307: Cylinder 7 Misfire Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0308",
+      "titleTR": "Silindir 8 Tekleme",
+      "titleEN": "Cylinder 8 Misfire Detected",
+      "descriptionTR": "P0308 arıza kodu: Silindir 8 Tekleme. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0308: Cylinder 8 Misfire Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0325",
+      "titleTR": "Vuruntu Sensörü 1 Devre",
+      "titleEN": "Knock Sensor 1 Circuit",
+      "descriptionTR": "P0325 arıza kodu: Vuruntu Sensörü 1 Devre. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0325: Knock Sensor 1 Circuit. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "knock_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0327",
+      "titleTR": "Vuruntu Sensörü 1 Düşük",
+      "titleEN": "Knock Sensor 1 Circuit Low",
+      "descriptionTR": "P0327 arıza kodu: Vuruntu Sensörü 1 Düşük. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0327: Knock Sensor 1 Circuit Low. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "knock_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0330",
+      "titleTR": "Vuruntu Sensörü 2 Devre",
+      "titleEN": "Knock Sensor 2 Circuit",
+      "descriptionTR": "P0330 arıza kodu: Vuruntu Sensörü 2 Devre. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0330: Knock Sensor 2 Circuit. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "knock_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0335",
+      "titleTR": "Krank Pozisyon Sensörü A",
+      "titleEN": "Crankshaft Position Sensor A",
+      "descriptionTR": "P0335 arıza kodu: Krank Pozisyon Sensörü A. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0335: Crankshaft Position Sensor A. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "crank_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0340",
+      "titleTR": "Eksantrik Pozisyon Sensörü A",
+      "titleEN": "Camshaft Position Sensor A",
+      "descriptionTR": "P0340 arıza kodu: Eksantrik Pozisyon Sensörü A. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0340: Camshaft Position Sensor A. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "cam_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0341",
+      "titleTR": "Eksantrik Sensör A Aralığı",
+      "titleEN": "Camshaft Position Sensor A Range/Performance",
+      "descriptionTR": "P0341 arıza kodu: Eksantrik Sensör A Aralığı. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0341: Camshaft Position Sensor A Range/Performance. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "cam_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0351",
+      "titleTR": "Ateşleme Bobini A Primer/Sekonder",
+      "titleEN": "Ignition Coil A Primary/Secondary",
+      "descriptionTR": "P0351 arıza kodu: Ateşleme Bobini A Primer/Sekonder. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0351: Ignition Coil A Primary/Secondary. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0352",
+      "titleTR": "Ateşleme Bobini B Primer/Sekonder",
+      "titleEN": "Ignition Coil B Primary/Secondary",
+      "descriptionTR": "P0352 arıza kodu: Ateşleme Bobini B Primer/Sekonder. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0352: Ignition Coil B Primary/Secondary. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0353",
+      "titleTR": "Ateşleme Bobini C",
+      "titleEN": "Ignition Coil C Primary/Secondary",
+      "descriptionTR": "P0353 arıza kodu: Ateşleme Bobini C. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0353: Ignition Coil C Primary/Secondary. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0354",
+      "titleTR": "Ateşleme Bobini D",
+      "titleEN": "Ignition Coil D Primary/Secondary",
+      "descriptionTR": "P0354 arıza kodu: Ateşleme Bobini D. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0354: Ignition Coil D Primary/Secondary. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "ignition_coil",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0400",
+      "titleTR": "EGR Akış Arızası",
+      "titleEN": "EGR Flow Malfunction",
+      "descriptionTR": "P0400 arıza kodu: EGR Akış Arızası. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0400: EGR Flow Malfunction. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0401",
+      "titleTR": "EGR Yetersiz Akış",
+      "titleEN": "EGR Insufficient Flow",
+      "descriptionTR": "P0401 arıza kodu: EGR Yetersiz Akış. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0401: EGR Insufficient Flow. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0411",
+      "titleTR": "Sekonder Hava Enjeksiyon Yanlış Akış",
+      "titleEN": "Secondary Air Injection Incorrect Flow",
+      "descriptionTR": "P0411 arıza kodu: Sekonder Hava Enjeksiyon Yanlış Akış. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0411: Secondary Air Injection Incorrect Flow. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0420",
+      "titleTR": "Katalitik Verim Düşük B1",
+      "titleEN": "Catalyst System Efficiency Below Threshold B1",
+      "descriptionTR": "P0420 arıza kodu: Katalitik Verim Düşük B1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0420: Catalyst System Efficiency Below Threshold B1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "catalytic_converter",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0430",
+      "titleTR": "Katalitik Verim Düşük B2",
+      "titleEN": "Catalyst System Efficiency Below Threshold B2",
+      "descriptionTR": "P0430 arıza kodu: Katalitik Verim Düşük B2. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0430: Catalyst System Efficiency Below Threshold B2. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "catalytic_converter",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0440",
+      "titleTR": "EVAP Sistem Arızası",
+      "titleEN": "EVAP System Malfunction",
+      "descriptionTR": "P0440 arıza kodu: EVAP Sistem Arızası. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0440: EVAP System Malfunction. The ECU detected an anomaly in this circuit/system.",
+      "severity": "low",
+      "partId": "evap",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0441",
+      "titleTR": "EVAP Yanlış Tahliye Akışı",
+      "titleEN": "EVAP Incorrect Purge Flow",
+      "descriptionTR": "P0441 arıza kodu: EVAP Yanlış Tahliye Akışı. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0441: EVAP Incorrect Purge Flow. The ECU detected an anomaly in this circuit/system.",
+      "severity": "low",
+      "partId": "evap",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0442",
+      "titleTR": "EVAP Küçük Kaçak",
+      "titleEN": "EVAP System Leak Detected Small",
+      "descriptionTR": "P0442 arıza kodu: EVAP Küçük Kaçak. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0442: EVAP System Leak Detected Small. The ECU detected an anomaly in this circuit/system.",
+      "severity": "low",
+      "partId": "evap",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0446",
+      "titleTR": "EVAP Havalandırma Kontrol",
+      "titleEN": "EVAP Vent Control Circuit",
+      "descriptionTR": "P0446 arıza kodu: EVAP Havalandırma Kontrol. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0446: EVAP Vent Control Circuit. The ECU detected an anomaly in this circuit/system.",
+      "severity": "low",
+      "partId": "evap",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0455",
+      "titleTR": "EVAP Büyük Kaçak",
+      "titleEN": "EVAP System Leak Detected Large",
+      "descriptionTR": "P0455 arıza kodu: EVAP Büyük Kaçak. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0455: EVAP System Leak Detected Large. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "evap",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0456",
+      "titleTR": "EVAP Çok Küçük Kaçak",
+      "titleEN": "EVAP Very Small Leak Detected",
+      "descriptionTR": "P0456 arıza kodu: EVAP Çok Küçük Kaçak. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0456: EVAP Very Small Leak Detected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "low",
+      "partId": "evap",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0480",
+      "titleTR": "Soğutma Fan 1 Kontrol Devresi",
+      "titleEN": "Cooling Fan 1 Control Circuit",
+      "descriptionTR": "P0480 arıza kodu: Soğutma Fan 1 Kontrol Devresi. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0480: Cooling Fan 1 Control Circuit. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0496",
+      "titleTR": "EVAP Yüksek Tahliye Akışı",
+      "titleEN": "EVAP High Purge Flow",
+      "descriptionTR": "P0496 arıza kodu: EVAP Yüksek Tahliye Akışı. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0496: EVAP High Purge Flow. The ECU detected an anomaly in this circuit/system.",
+      "severity": "low",
+      "partId": "evap",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0500",
+      "titleTR": "Araç Hız Sensörü",
+      "titleEN": "Vehicle Speed Sensor",
+      "descriptionTR": "P0500 arıza kodu: Araç Hız Sensörü. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0500: Vehicle Speed Sensor. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "abs_module",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0506",
+      "titleTR": "Rölanti Kontrol Düşük RPM",
+      "titleEN": "Idle Control System RPM Lower Than Expected",
+      "descriptionTR": "P0506 arıza kodu: Rölanti Kontrol Düşük RPM. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0506: Idle Control System RPM Lower Than Expected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0507",
+      "titleTR": "Rölanti Kontrol Yüksek RPM",
+      "titleEN": "Idle Control System RPM Higher Than Expected",
+      "descriptionTR": "P0507 arıza kodu: Rölanti Kontrol Yüksek RPM. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0507: Idle Control System RPM Higher Than Expected. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0520",
+      "titleTR": "Motor Yağ Basınç Sensörü",
+      "titleEN": "Engine Oil Pressure Sensor/Switch",
+      "descriptionTR": "P0520 arıza kodu: Motor Yağ Basınç Sensörü. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0520: Engine Oil Pressure Sensor/Switch. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0562",
+      "titleTR": "Sistem Voltajı Düşük",
+      "titleEN": "System Voltage Low",
+      "descriptionTR": "P0562 arıza kodu: Sistem Voltajı Düşük. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0562: System Voltage Low. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "battery",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0563",
+      "titleTR": "Sistem Voltajı Yüksek",
+      "titleEN": "System Voltage High",
+      "descriptionTR": "P0563 arıza kodu: Sistem Voltajı Yüksek. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0563: System Voltage High. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "alternator",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0606",
+      "titleTR": "ECM/PCM İşlemci Hatası",
+      "titleEN": "ECM/PCM Processor Fault",
+      "descriptionTR": "P0606 arıza kodu: ECM/PCM İşlemci Hatası. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0606: ECM/PCM Processor Fault. The ECU detected an anomaly in this circuit/system.",
+      "severity": "critical",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0615",
+      "titleTR": "Marş Rölesi Devresi",
+      "titleEN": "Starter Relay Circuit",
+      "descriptionTR": "P0615 arıza kodu: Marş Rölesi Devresi. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0615: Starter Relay Circuit. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "battery",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0627",
+      "titleTR": "Yakıt Pompası A Kontrol Açık",
+      "titleEN": "Fuel Pump A Control Circuit Open",
+      "descriptionTR": "P0627 arıza kodu: Yakıt Pompası A Kontrol Açık. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0627: Fuel Pump A Control Circuit Open. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "fuel_pump",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0685",
+      "titleTR": "ECM/PCM Güç Rölesi Kontrol",
+      "titleEN": "ECM/PCM Power Relay Control Circuit",
+      "descriptionTR": "P0685 arıza kodu: ECM/PCM Güç Rölesi Kontrol. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0685: ECM/PCM Power Relay Control Circuit. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "battery",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P0700",
+      "titleTR": "Şanzıman Kontrol Sistemi Arızası",
+      "titleEN": "Transmission Control System Malfunction",
+      "descriptionTR": "P0700 arıza kodu: Şanzıman Kontrol Sistemi Arızası. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P0700: Transmission Control System Malfunction. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P1135",
+      "titleTR": "O2 Isıtıcı Bank1 Sensör1",
+      "titleEN": "O2 Heater Circuit Bank1 Sensor1",
+      "descriptionTR": "P1135 arıza kodu: O2 Isıtıcı Bank1 Sensör1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P1135: O2 Heater Circuit Bank1 Sensor1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P2101",
+      "titleTR": "Gaz Aktüatör Kontrol Motor",
+      "titleEN": "Throttle Actuator Control Motor Circuit",
+      "descriptionTR": "P2101 arıza kodu: Gaz Aktüatör Kontrol Motor. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P2101: Throttle Actuator Control Motor Circuit. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P2111",
+      "titleTR": "Gaz Kelebeği Sıkışık Açık",
+      "titleEN": "Throttle Actuator Control Stuck Open",
+      "descriptionTR": "P2111 arıza kodu: Gaz Kelebeği Sıkışık Açık. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P2111: Throttle Actuator Control Stuck Open. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P2112",
+      "titleTR": "Gaz Kelebeği Sıkışık Kapalı",
+      "titleEN": "Throttle Actuator Control Stuck Closed",
+      "descriptionTR": "P2112 arıza kodu: Gaz Kelebeği Sıkışık Kapalı. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P2112: Throttle Actuator Control Stuck Closed. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P2122",
+      "titleTR": "Pedal Konum Sensörü D Düşük",
+      "titleEN": "Throttle/Pedal Position Sensor D Low",
+      "descriptionTR": "P2122 arıza kodu: Pedal Konum Sensörü D Düşük. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P2122: Throttle/Pedal Position Sensor D Low. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P2135",
+      "titleTR": "TPS A/B Voltaj Korelasyonu",
+      "titleEN": "Throttle/Pedal Position Sensor A/B Voltage Correlation",
+      "descriptionTR": "P2135 arıza kodu: TPS A/B Voltaj Korelasyonu. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P2135: Throttle/Pedal Position Sensor A/B Voltage Correlation. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P2195",
+      "titleTR": "O2 Sinyal Stuck Lean B1S1",
+      "titleEN": "O2 Sensor Signal Stuck Lean B1S1",
+      "descriptionTR": "P2195 arıza kodu: O2 Sinyal Stuck Lean B1S1. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P2195: O2 Sensor Signal Stuck Lean B1S1. The ECU detected an anomaly in this circuit/system.",
+      "severity": "medium",
+      "partId": "o2_sensor",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "P2299",
+      "titleTR": "Fren Pedalı / Gaz Uyumsuz",
+      "titleEN": "Brake Pedal Position / Accelerator Incompatible",
+      "descriptionTR": "P2299 arıza kodu: Fren Pedalı / Gaz Uyumsuz. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "P2299: Brake Pedal Position / Accelerator Incompatible. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "throttle_body",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "U0100",
+      "titleTR": "ECM ile İletişim Kaybı",
+      "titleEN": "Lost Communication With ECM/PCM",
+      "descriptionTR": "U0100 arıza kodu: ECM ile İletişim Kaybı. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "U0100: Lost Communication With ECM/PCM. The ECU detected an anomaly in this circuit/system.",
+      "severity": "critical",
+      "partId": "engine",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    },
+    {
+      "code": "U0121",
+      "titleTR": "ABS Modülü ile İletişim Kaybı",
+      "titleEN": "Lost Communication With ABS Control Module",
+      "descriptionTR": "U0121 arıza kodu: ABS Modülü ile İletişim Kaybı. Araç elektronik kontrol ünitesi bu alanda anomali tespit etti.",
+      "descriptionEN": "U0121: Lost Communication With ABS Control Module. The ECU detected an anomaly in this circuit/system.",
+      "severity": "high",
+      "partId": "abs_module",
+      "repairStepsTR": [
+        "Kodun donmuş/geçici olduğunu doğrula",
+        "İlgili konektör ve kablo demetini incele",
+        "Parçayı teknik verilere göre test et",
+        "Gerekirse parçayı değiştir",
+        "Kodları sil ve yol testi yap"
+      ],
+      "repairStepsEN": [
+        "Confirm if the code is hard or intermittent",
+        "Inspect related connectors and harness",
+        "Test the component per service data",
+        "Replace the part if needed",
+        "Clear codes and road-test"
+      ],
+      "safetyNotesTR": "Yüksek/kritik kodlarda aracı güvenli şekilde park edin; gerekirse çekici kullanın.",
+      "safetyNotesEN": "For high/critical codes, park safely and tow if required."
+    }
+  ]
+}

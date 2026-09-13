@@ -1,0 +1,384 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "tab.diagnose" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Diagnose" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Teşhis" } }
+      }
+    },
+    "tab.community" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Community" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Topluluk" } }
+      }
+    },
+    "tab.upload" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Upload" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Yükle" } }
+      }
+    },
+    "tab.profile" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Profile" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Profil" } }
+      }
+    },
+    "auth.tagline" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "VIN + fault code → part, repair steps, and 3D guidance from the community." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Şasi + arıza kodu → parça, tamir adımları ve topluluktan 3D rehberlik." } }
+      }
+    },
+    "auth.demo" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Continue with Demo" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Demo ile devam et" } }
+      }
+    },
+    "diagnose.headline" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Find the fault" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Arızayı bul" } }
+      }
+    },
+    "diagnose.subtitle" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enter a specific VIN and fault code — diagnosis is resolved per vehicle brand." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Spesifik VIN ve arıza kodunu gir — teşhis araç markasına göre çözülür." } }
+      }
+    },
+    "diagnose.vin" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "VIN / Chassis" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "VIN / Şasi" } }
+      }
+    },
+    "diagnose.dtc" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Fault code (DTC)" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Arıza kodu (DTC)" } }
+      }
+    },
+    "diagnose.submit" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Diagnose" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Teşhis et" } }
+      }
+    },
+    "diagnose.samples" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Try a common code" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Yaygın bir kod dene" } }
+      }
+    },
+    "diagnose.samples.brand" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Codes for this brand" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Bu markaya özel kodlar" } }
+      }
+    },
+    "diagnose.brandSpecific" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Brand-specific diagnosis enabled" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Markaya özel teşhis hazır" } }
+      }
+    },
+    "legal.disclaimer" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "For informational purposes only. Not a substitute for professional service advice. Follow safety procedures." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Yalnızca bilgilendirme amaçlıdır. Profesyonel servis tavsiyesinin yerini tutmaz. Güvenlik prosedürlerine uyun." } }
+      }
+    },
+    "error.vin.invalid" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "VIN must be 17 characters (no I, O, Q)." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "VIN 17 karakter olmalı (I, O, Q yok)." } }
+      }
+    },
+    "error.vin.network" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Could not reach VIN service." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "VIN servisine ulaşılamadı." } }
+      }
+    },
+    "error.vin.notFound" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Vehicle not found for this VIN." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Bu VIN için araç bulunamadı." } }
+      }
+    },
+    "error.dtc.invalid" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enter a valid code like P0300." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "P0300 gibi geçerli bir kod girin." } }
+      }
+    },
+    "error.dtc.notFound" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "This fault code is not in the catalog yet." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Bu arıza kodu henüz katalogda yok." } }
+      }
+    },
+    "error.dtc.makeUnsupported" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Brand %@ is not in the catalog yet. Supported brands only." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "%@ markası henüz katalogda yok. Yalnızca desteklenen markalar." } }
+      }
+    },
+    "error.dtc.notForMake" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%@ is not listed for %@ — manufacturer-specific codes differ by brand." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "%@ kodu %@ için tanımlı değil — üreticiye özel kodlar markaya göre değişir." } }
+      }
+    },
+    "result.brandSpecific" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Make-specific repair guidance" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Markaya özel tamir rehberi" } }
+      }
+    },
+    "severity.low" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "LOW" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "DÜŞÜK" } }
+      }
+    },
+    "severity.medium" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "MEDIUM" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "ORTA" } }
+      }
+    },
+    "severity.high" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "HIGH" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "YÜKSEK" } }
+      }
+    },
+    "severity.critical" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "CRITICAL" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "KRİTİK" } }
+      }
+    },
+    "result.steps" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Repair steps" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Tamir adımları" } }
+      }
+    },
+    "result.videos" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Community videos" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Topluluk videoları" } }
+      }
+    },
+    "result.videos.empty" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No videos yet — be the first to upload." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Henüz video yok — ilk yükleyen sen ol." } }
+      }
+    },
+    "result.view3d" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "View faulty part in 3D" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Arızalı parçayı 3D’de gör" } }
+      }
+    },
+    "scene3d.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Highlighted part" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Vurgulanan parça" } }
+      }
+    },
+    "scene3d.hint" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Drag to rotate. Orange mark shows the likely faulty component." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Döndürmek için sürükle. Turuncu işaret olası arızalı parçayı gösterir." } }
+      }
+    },
+    "scene3d.nav" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "3D Vehicle" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "3D Araç" } }
+      }
+    },
+    "community.filter" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Filter by DTC" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "DTC ile filtrele" } }
+      }
+    },
+    "community.comments" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Comments" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Yorumlar" } }
+      }
+    },
+    "community.comment.placeholder" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Share your fix…" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Çözümünü paylaş…" } }
+      }
+    },
+    "community.comment.send" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Send" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Gönder" } }
+      }
+    },
+    "upload.details" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Details" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Detaylar" } }
+      }
+    },
+    "upload.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Title" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Başlık" } }
+      }
+    },
+    "upload.summary" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "What fixed it?" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Ne düzeltti?" } }
+      }
+    },
+    "upload.media" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Media" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Medya" } }
+      }
+    },
+    "upload.pick" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pick a video" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Video seç" } }
+      }
+    },
+    "upload.submit" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Submit for review" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "İncelemeye gönder" } }
+      }
+    },
+    "upload.success" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Uploaded. Pending moderation (admins publish instantly)." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Yüklendi. Moderasyon bekliyor (admin anında yayınlar)." } }
+      }
+    },
+    "upload.error.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Title is required." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Başlık gerekli." } }
+      }
+    },
+    "upload.quota %lld" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld uploads left this month" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Bu ay %lld yükleme hakkın kaldı" } }
+      }
+    },
+    "%lld uploads left this month" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "%lld uploads left this month" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Bu ay %lld yükleme hakkın kaldı" } }
+      }
+    },
+    "profile.subscription" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Subscription" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Abonelik" } }
+      }
+    },
+    "profile.plan" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Plan" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Plan" } }
+      }
+    },
+    "profile.plan.pro" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pro" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Pro" } }
+      }
+    },
+    "profile.plan.free" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Free" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Ücretsiz" } }
+      }
+    },
+    "profile.upgrade" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Upgrade to Pro" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Pro’ya geç" } }
+      }
+    },
+    "profile.myVideos" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "My videos" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Videolarım" } }
+      }
+    },
+    "profile.myVideos.empty" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No uploads yet." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Henüz yükleme yok." } }
+      }
+    },
+    "profile.signOut" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sign out" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Çıkış yap" } }
+      }
+    },
+    "paywall.subtitle" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock 3D part highlight, higher video quota, and repair history." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "3D parça vurgusu, yüksek video kotası ve tamir geçmişini aç." } }
+      }
+    },
+    "paywall.benefit.3d" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Interactive 3D fault localization" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "İnteraktif 3D arıza konumlandırma" } }
+      }
+    },
+    "paywall.benefit.video" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Up to 30 community uploads / month" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Ayda 30’a kadar topluluk videosu" } }
+      }
+    },
+    "paywall.benefit.history" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlimited diagnosis history" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Sınırsız teşhis geçmişi" } }
+      }
+    },
+    "paywall.demoUnlock" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Pro (Demo)" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Pro’yu aç (Demo)" } }
+      }
+    },
+    "paywall.restore" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Restore purchases" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Satın alımları geri yükle" } }
+      }
+    },
+    "paywall.close" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Close" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Kapat" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

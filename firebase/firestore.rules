@@ -1,0 +1,58 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+    function isAdmin() {
+      return signedIn()
+        && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    match /users/{uid} {
+      allow read: if signedIn();
+      allow create: if isOwner(uid);
+      allow update: if isOwner(uid) || isAdmin();
+    }
+
+    match /dtcCatalog/{code} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /parts/{partId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    match /repairs/{repairId} {
+      allow read: if resource.data.status == 'published' || isOwner(resource.data.authorId) || isAdmin();
+      allow create: if signedIn()
+        && request.resource.data.authorId == request.auth.uid
+        && request.resource.data.status in ['pending', 'published'];
+      allow update: if isAdmin() || isOwner(resource.data.authorId);
+
+      match /comments/{commentId} {
+        allow read: if true;
+        allow create: if signedIn()
+          && request.resource.data.authorId == request.auth.uid;
+        allow delete: if isOwner(resource.data.authorId) || isAdmin();
+      }
+
+      match /likes/{uid} {
+        allow read: if true;
+        allow create, delete: if isOwner(uid);
+      }
+    }
+
+    match /videos/{videoId} {
+      allow read: if resource.data.status == 'published' || isOwner(resource.data.authorId) || isAdmin();
+      allow create: if signedIn()
+        && request.resource.data.authorId == request.auth.uid;
+      allow update: if isAdmin() || isOwner(resource.data.authorId);
+    }
+  }
+}

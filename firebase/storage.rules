@@ -1,0 +1,27 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function signedIn() {
+      return request.auth != null;
+    }
+    function isVideo() {
+      return request.resource.contentType.matches('video/.*');
+    }
+    function under100MB() {
+      return request.resource.size < 100 * 1024 * 1024;
+    }
+
+    match /videos/{uid}/{fileName} {
+      allow read: if true;
+      allow write: if signedIn()
+        && request.auth.uid == uid
+        && isVideo()
+        && under100MB();
+    }
+
+    match /thumbnails/{uid}/{fileName} {
+      allow read: if true;
+      allow write: if signedIn() && request.auth.uid == uid;
+    }
+  }
+}
