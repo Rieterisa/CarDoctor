@@ -5,19 +5,20 @@ alwaysApply: true
 
 # GitHub push after every step
 
-CarDoctor MVP+ is delivered in discrete steps (plan delivery order). **Do not leave finished work only on the local machine.**
+CarDoctor MVP+ must stay on GitHub. **Do not leave finished work only on the local machine.**
 
-## Required after each completed step
+## Automatic push (preferred)
 
-1. Stage relevant files (`git add`), excluding secrets (`GoogleService-Info.plist`, `.env*`, keys).
-2. Create a focused commit that names the step (e.g. `feat: RealityKit 3D part highlight`).
-3. **Push immediately** to `origin` on the current branch (`git push` or `git push -u origin HEAD` if first push).
-4. Confirm `git status` is clean (or only unrelated local files remain) and report the remote commit / repo URL.
+Project hooks in `.cursor/hooks.json` run `.cursor/hooks/auto-push.ps1` on:
 
-## Rules
+- `afterFileEdit` (debounced)
+- `stop` (agent finished)
+- `subagentStop`
 
-- One logical plan step → one commit → one push (do not batch multiple finished steps before pushing).
-- Never force-push to `main`/`master` unless the user explicitly asks.
-- Never commit secrets; keep `GoogleService-Info.plist` gitignored; use the `.example` template only.
-- If `origin` is missing or push fails (auth/network), fix remote/auth and push before marking the step done.
-- Do not mark a plan to-do complete until the push has succeeded.
+The script stages safe files, commits, and pushes to `origin`. Secrets stay excluded.
+
+Agents should still push deliberately when a logical step finishes; the hook is the safety net.
+
+## Manual fallback
+
+If the hook did not fire: `git add` → commit → `git push`. Never force-push `main` unless the user asks. Never commit `GoogleService-Info.plist`, `.env*`, or keys.

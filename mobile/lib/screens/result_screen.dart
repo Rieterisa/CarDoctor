@@ -182,6 +182,7 @@ class ResultScreen extends StatelessWidget {
                           builder: (_) => Scene3DScreen(
                             partName: result.part.name(tr),
                             entityName: result.part.usdzEntityName,
+                            vehicle: result.vehicle,
                           ),
                         ),
                       );

@@ -1,11 +1,12 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:provider/provider.dart';
 
 import '../app_state.dart';
+import '../brand_kits.dart';
 import '../l10n/app_localizations.dart';
+import '../models.dart';
 import '../part_camera.dart';
 import '../part_inspector_catalog.dart';
 import '../theme.dart';
@@ -19,10 +20,12 @@ class Scene3DScreen extends StatefulWidget {
     super.key,
     required this.partName,
     required this.entityName,
+    required this.vehicle,
   });
 
   final String partName;
   final String entityName;
+  final VehicleInfo vehicle;
 
   @override
   State<Scene3DScreen> createState() => _Scene3DScreenState();
@@ -32,19 +35,14 @@ class _Scene3DScreenState extends State<Scene3DScreen> {
   _Phase _phase = _Phase.vehicle;
   late InspectablePart _target;
   InspectablePart? _selected;
-
-  static String get _carSrc {
-    if (kIsWeb) {
-      return 'https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Assets@main/Models/CarConcept/glTF-Binary/CarConcept.glb';
-    }
-    return 'assets/models/car_concept.glb';
-  }
+  late BrandKit _kit;
 
   @override
   void initState() {
     super.initState();
     _target = PartInspectorCatalog.byId(widget.entityName);
     _selected = _target;
+    _kit = BrandKits.resolve(make: widget.vehicle.make, bodyClass: widget.vehicle.bodyClass);
   }
 
   void _openHood() {
@@ -59,7 +57,7 @@ class _Scene3DScreenState extends State<Scene3DScreen> {
       _selected = part;
       _phase = _Phase.extracting;
     });
-    await Future<void>.delayed(const Duration(milliseconds: 700));
+    await Future<void>.delayed(const Duration(milliseconds: 750));
     if (!mounted) return;
     setState(() => _phase = _Phase.isolated);
   }
@@ -81,6 +79,8 @@ class _Scene3DScreenState extends State<Scene3DScreen> {
     final l10n = AppLocalizations.of(context);
     final tr = context.watch<AppState>().preferTurkish;
     final active = _selected ?? _target;
+    final bodySrc = BrandKits.modelSrc(_kit.bodyAsset);
+    final partSrc = BrandKits.modelSrc(_kit.partAssetFor(active.kind));
 
     return Scaffold(
       backgroundColor: const Color(0xFF071116),
@@ -102,6 +102,8 @@ class _Scene3DScreenState extends State<Scene3DScreen> {
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 10),
                 child: _StatusBanner(
                   phase: _phase,
+                  kit: _kit,
+                  vehicle: widget.vehicle,
                   targetName: _target.name(tr),
                   activeName: active.name(tr),
                   hint: active.hint(tr),
@@ -117,12 +119,11 @@ class _Scene3DScreenState extends State<Scene3DScreen> {
                       color: const Color(0xFF0A1820),
                       child: AnimatedSwitcher(
                         duration: const Duration(milliseconds: 420),
-                        switchInCurve: Curves.easeOutCubic,
-                        switchOutCurve: Curves.easeInCubic,
                         child: switch (_phase) {
                           _Phase.vehicle => _VehicleStage(
-                              key: const ValueKey('vehicle'),
-                              src: _carSrc,
+                              key: ValueKey('vehicle-${_kit.id}'),
+                              src: bodySrc,
+                              accent: _kit.accent,
                               ctaLabel: tr ? 'Kaputu aç' : 'Open hood',
                               onOpenHood: _openHood,
                             ),
@@ -136,11 +137,15 @@ class _Scene3DScreenState extends State<Scene3DScreen> {
                           _Phase.extracting => _ExtractingStage(
                               key: const ValueKey('extract'),
                               part: active,
+                              partSrc: partSrc,
                               isTurkish: tr,
                             ),
-                          _Phase.isolated => IsolatedPartStage(
-                              key: ValueKey('iso-${active.id}'),
+                          _Phase.isolated => _IsolatedGlbStage(
+                              key: ValueKey('iso-${active.id}-${_kit.id}'),
                               part: active,
+                              partSrc: partSrc,
+                              accent: _kit.accent,
+                              isTurkish: tr,
                             ),
                         },
                       ),
@@ -153,8 +158,8 @@ class _Scene3DScreenState extends State<Scene3DScreen> {
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
                   child: Text(
                     tr
-                        ? 'Turuncu nabızlı parça teşhis sonucun. Bir parçaya dokun → araçtan sökülür.'
-                        : 'Pulsing orange is your diagnosis target. Tap a part to remove it from the car.',
+                        ? 'Turuncu nabızlı parça teşhis sonucun. Dokun → araçtan sökülür (ayrık 3D).'
+                        : 'Pulsing orange is your diagnosis target. Tap → remove as discrete 3D part.',
                     style: AppTheme.body(size: 12, color: Colors.white60),
                     textAlign: TextAlign.center,
                   ),
@@ -179,13 +184,11 @@ class _Scene3DScreenState extends State<Scene3DScreen> {
                       Expanded(
                         child: FilledButton(
                           style: FilledButton.styleFrom(
-                            backgroundColor: AppTheme.fault,
+                            backgroundColor: _kit.accent,
+                            foregroundColor: Colors.white,
                             minimumSize: const Size.fromHeight(48),
                           ),
-                          onPressed: () => setState(() {
-                            _selected = _target;
-                            _phase = _Phase.isolated;
-                          }),
+                          onPressed: () => _extract(_target),
                           child: Text(tr ? 'Teşhis parçası' : 'Diagnosis part'),
                         ),
                       ),
@@ -231,6 +234,8 @@ class _Header extends StatelessWidget {
 class _StatusBanner extends StatelessWidget {
   const _StatusBanner({
     required this.phase,
+    required this.kit,
+    required this.vehicle,
     required this.targetName,
     required this.activeName,
     required this.hint,
@@ -238,6 +243,8 @@ class _StatusBanner extends StatelessWidget {
   });
 
   final _Phase phase;
+  final BrandKit kit;
+  final VehicleInfo vehicle;
   final String targetName;
   final String activeName;
   final String hint;
@@ -246,10 +253,10 @@ class _StatusBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final title = switch (phase) {
-      _Phase.vehicle => isTurkish ? 'Hedef parça' : 'Target part',
+      _Phase.vehicle => isTurkish ? 'Araç kiti' : 'Vehicle kit',
       _Phase.bay => isTurkish ? 'Motor bölmesinde seç' : 'Select in engine bay',
       _Phase.extracting => isTurkish ? 'Sökülüyor' : 'Detaching',
-      _Phase.isolated => isTurkish ? 'Sökülen parça' : 'Removed part',
+      _Phase.isolated => isTurkish ? 'Sökülen 3D parça' : 'Removed 3D part',
     };
     final name = phase == _Phase.isolated || phase == _Phase.extracting ? activeName : targetName;
 
@@ -259,11 +266,27 @@ class _StatusBanner extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: AppTheme.fault.withValues(alpha: 0.4)),
+        border: Border.all(color: kit.accent.withValues(alpha: 0.55)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: kit.accent.withValues(alpha: 0.25),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text(
+                  '${vehicle.displayName} · ${kit.label}',
+                  style: AppTheme.body(size: 11, color: Colors.white, weight: FontWeight.w800),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
           Text(title, style: AppTheme.body(size: 11, color: Colors.white60, weight: FontWeight.w700)),
           Text(name, style: AppTheme.display(size: 18, color: Colors.white)),
           if (phase == _Phase.bay || phase == _Phase.isolated) ...[
@@ -280,11 +303,13 @@ class _VehicleStage extends StatelessWidget {
   const _VehicleStage({
     super.key,
     required this.src,
+    required this.accent,
     required this.ctaLabel,
     required this.onOpenHood,
   });
 
   final String src;
+  final Color accent;
   final String ctaLabel;
   final VoidCallback onOpenHood;
 
@@ -296,16 +321,16 @@ class _VehicleStage extends StatelessWidget {
         ModelViewer(
           backgroundColor: const Color(0xFF0A1820),
           src: src,
-          alt: 'CarDoctor vehicle',
+          alt: 'Brand vehicle body',
           ar: false,
           autoRotate: true,
-          autoRotateDelay: 400,
+          autoRotateDelay: 300,
           cameraControls: true,
-          cameraOrbit: PartCameraFocus.overview.orbit,
-          cameraTarget: PartCameraFocus.overview.target,
-          fieldOfView: '38deg',
+          cameraOrbit: '25deg 70deg 3.8m',
+          cameraTarget: '0m 0.35m 0m',
+          fieldOfView: '35deg',
           shadowIntensity: 1,
-          exposure: 1.1,
+          exposure: 1.05,
           loading: Loading.eager,
         ),
         Positioned(
@@ -314,7 +339,7 @@ class _VehicleStage extends StatelessWidget {
           bottom: 16,
           child: FilledButton.icon(
             style: FilledButton.styleFrom(
-              backgroundColor: AppTheme.fault,
+              backgroundColor: accent,
               foregroundColor: Colors.white,
               minimumSize: const Size.fromHeight(48),
             ),
@@ -329,9 +354,15 @@ class _VehicleStage extends StatelessWidget {
 }
 
 class _ExtractingStage extends StatelessWidget {
-  const _ExtractingStage({super.key, required this.part, required this.isTurkish});
+  const _ExtractingStage({
+    super.key,
+    required this.part,
+    required this.partSrc,
+    required this.isTurkish,
+  });
 
   final InspectablePart part;
+  final String partSrc;
   final bool isTurkish;
 
   @override
@@ -344,25 +375,94 @@ class _ExtractingStage extends StatelessWidget {
           selectedPartId: part.id,
           isTurkish: isTurkish,
           onPartTap: (_) {},
-        ).animate().fadeOut(duration: 600.ms),
+        ).animate().fadeOut(duration: 650.ms),
         Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               SizedBox(
-                width: 180,
-                height: 180,
-                child: IsolatedPartStage(part: part),
+                width: 220,
+                height: 220,
+                child: ModelViewer(
+                  backgroundColor: const Color(0x000A1820),
+                  src: partSrc,
+                  alt: part.name(isTurkish),
+                  ar: false,
+                  autoRotate: true,
+                  cameraControls: false,
+                  cameraOrbit: '0deg 75deg 2.2m',
+                  fieldOfView: '30deg',
+                  shadowIntensity: 1,
+                ),
               )
                   .animate()
-                  .scale(begin: const Offset(0.35, 0.35), end: const Offset(1, 1), duration: 650.ms, curve: Curves.easeOutBack)
-                  .moveY(begin: 80, end: 0, duration: 650.ms, curve: Curves.easeOutCubic),
-              const SizedBox(height: 12),
+                  .scale(begin: const Offset(0.4, 0.4), end: const Offset(1, 1), duration: 700.ms, curve: Curves.easeOutBack)
+                  .moveY(begin: 90, end: 0, duration: 700.ms),
+              const SizedBox(height: 8),
               Text(
                 isTurkish ? '${part.name(true)} söküldü' : '${part.name(false)} removed',
                 style: AppTheme.display(size: 18, color: Colors.white),
-              ).animate().fadeIn(delay: 200.ms),
+              ),
             ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _IsolatedGlbStage extends StatelessWidget {
+  const _IsolatedGlbStage({
+    super.key,
+    required this.part,
+    required this.partSrc,
+    required this.accent,
+    required this.isTurkish,
+  });
+
+  final InspectablePart part;
+  final String partSrc;
+  final Color accent;
+  final bool isTurkish;
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        ModelViewer(
+          backgroundColor: const Color(0xFF0A1820),
+          src: partSrc,
+          alt: part.name(isTurkish),
+          ar: false,
+          autoRotate: true,
+          autoRotateDelay: 200,
+          cameraControls: true,
+          cameraOrbit: PartCameraFocus.overview.orbit,
+          cameraTarget: '0m 0.2m 0m',
+          fieldOfView: '28deg',
+          shadowIntensity: 1,
+          exposure: 1.15,
+          loading: Loading.eager,
+        ),
+        Positioned(
+          left: 16,
+          right: 16,
+          bottom: 16,
+          child: Container(
+            padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: Colors.black.withValues(alpha: 0.55),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(color: accent.withValues(alpha: 0.5)),
+            ),
+            child: Text(
+              isTurkish
+                  ? 'Bu ayrık 3D parça. Döndür, yakınlaştır — araç gövdesi gizlendi.'
+                  : 'Discrete 3D part only. Orbit/zoom — vehicle body is hidden.',
+              style: AppTheme.body(size: 12, color: Colors.white70),
+              textAlign: TextAlign.center,
+            ),
           ),
         ),
       ],

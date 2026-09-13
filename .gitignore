@@ -39,3 +39,7 @@ desktop.ini
 __pycache__/
 *.py[cod]
 
+
+# Cursor hook runtime
+.cursor/hooks/state/
+

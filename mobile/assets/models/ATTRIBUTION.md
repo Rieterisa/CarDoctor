@@ -1,10 +1,12 @@
 # 3D model attribution
 
-## CarConcept.glb
-- Source: [Khronos glTF-Sample-Assets — CarConcept](https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/CarConcept)
-- License: Creative Commons Attribution 4.0 (CC-BY 4.0)
-- Credit: Khronos Group / contributors listed in the asset README
+## Vehicle bodies & discrete parts
+- **Kenney Car Kit** (sedan, hatchback, SUV, truck, debris parts)  
+  Source: https://kenney.nl/assets/car-kit  
+  License: **CC0 1.0** (public domain)  
+  Credit appreciated but not required: Kenney.nl
 
-## ToyCar.glb (fallback)
-- Source: Khronos glTF-Sample-Assets — ToyCar
-- License: CC-BY 4.0
+## Brand kits in CarDoctor
+VIN `make` selects a kit (Honda → hatchback, Ford → SUV, GM → truck, etc.).
+Isolated inspection uses separate part GLBs (battery box, sensor cone, drivetrain, …)
+— not OEM CAD. True manufacturer meshes require licensed content.

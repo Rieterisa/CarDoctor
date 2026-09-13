@@ -31,5 +31,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/dtc_catalog.json
-    - assets/models/car_concept.glb
-    - assets/models/toy_car.glb
+    - assets/models/bodies/
+    - assets/models/parts/
